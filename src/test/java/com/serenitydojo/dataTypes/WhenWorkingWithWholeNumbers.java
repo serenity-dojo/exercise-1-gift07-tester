@@ -1,6 +1,7 @@
 package com.serenitydojo.dataTypes;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
@@ -12,8 +13,7 @@ public class WhenWorkingWithWholeNumbers {
 
     int timeJump = 30;
     targetYear = initialYear + timeJump;
-    assertThat(targetYear, equalTo(2015));
-
+    assertThat(targetYear,is(equalTo(2015)));
 
     }
 
